@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificação de mensagens</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CODIFICAÇÃO DE MENSAGENS</h1>
+        <a class="modos" href=http://www.bosontreinamentos.com.br/seguranca/criptografia-cifra-de-cesar/
+            target="_blank">CIFRA DE CÉSAR</a>
+        <a class="modos" href="https://marquesfernandes.com/self/o-que-e-base64-para-que-serve-e-como-funciona/"
+            target="_blank">BASE64</a>
+    </header>
+
+    <form class="forms" name="formulario">
+        <main>
+
+            <div class="Tipo">
+                <select name="select1" id="opcoes" required>
+                    <label for="option">Escolha o modo</label>
+                    <option value="semValor" id="semValor" disabled selected> Escolha uma opção</option>
+                    <option id="cifraDeCesar" value="cifra"> Cifra de César</option>
+                    <option id="base64" value="base"> Base64</option>
+                </select>
+            </div>
+
+            <section class="entradaTexto">
+                <textarea class="texto" name="text" id="texto1" placeholder="Escreva sua mensagem aqui."></textarea>
+            </section>
+
+            <section class="incremento" style="display:none;" id="idIncremento">
+                <label for="incrementar">Incremento:</label>
+                <input maxlength="2" id="numerosIncremento" default="0" min="1" max="99" value="1">
+            </section>
+
+            <section class="radioCodif">
+                <input type="radio" name="ativar" id="codificar" value="codificar">&nbsp;Codificar &nbsp;
+                <input type="radio" name="ativar" id="decodificar" value="decodificar">&nbsp;Decodificar
+            </section>
+
+            <section class="botaoEnviar">
+                <button type="submit" class="btnEnviar" id="submit">Codificar mensagem </button>
+            </section>
+        </main>
+        <section class="saidaTexto">
+            <output class="saitexto" id="texto2"></output>
+        </section>
+
+    </form>
+
+    
+    <footer>
+        <div class="grupo">
+            <a href="https://www.linkedin.com/in/thais-souza7/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/thaissouza7" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <a href="mailto:thaicxx9@gmail.com">E-mail </a>
+            
+            
+        </div>
+        <p>Desenvolvido por Thais Silva Souza</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
